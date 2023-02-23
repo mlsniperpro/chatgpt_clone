@@ -34,7 +34,7 @@ app.post('/', async (req, res) => {
             top_p: 1,
             frequency_penalty: 0.5,
             presence_penalty: 0,
-            stop:["####"],
+            stop:["****"],
         })
         res.status(200).send({
             bot: response.data.choices[0].text
